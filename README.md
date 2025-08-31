@@ -8,10 +8,8 @@ Make sure to install dependencies:
 
 ```bash
 
-
 # pnpm
 pnpm install
-
 
 ```
 
@@ -23,7 +21,6 @@ Start the development server on `http://localhost:3000`:
 
 # pnpm
 pnpm dev
-
 
 ```
 
@@ -44,7 +41,6 @@ Locally preview production build:
 
 # pnpm
 pnpm preview
-
 
 ```
 
