@@ -14,7 +14,9 @@ export default withNuxt(antfu({
     quotes: "double",
   },
   ignores: [".pnpm-store/**"],
-}, {
+},
+// tailwind.configs["flat/recommended"],
+{
   rules: {
     "ts/no-redeclare": "off",
     "ts/consistent-type-definitions": ["error", "type"],
