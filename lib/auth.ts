@@ -17,4 +17,5 @@ export const auth = betterAuth({
       clientSecret: env.GITHUB_CLIENT_SECRET as string,
     },
   },
+  baseURL: env.VERCEL_URL ?? env.BETTER_AUTH_URL,
 });

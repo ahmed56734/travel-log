@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAuthStore } from "~/components/app/stores/auth-store";
+import { useAuthStore } from "~/stores/auth-store";
 
 const { isLoading, signIn } = useAuthStore();
 </script>
