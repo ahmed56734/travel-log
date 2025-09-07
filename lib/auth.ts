@@ -8,6 +8,7 @@ export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "sqlite",
   }),
+  secret: env.BETTER_AUTH_SECRET,
   advanced: {
     generateId: false,
   },
@@ -17,5 +18,5 @@ export const auth = betterAuth({
       clientSecret: env.GITHUB_CLIENT_SECRET as string,
     },
   },
-  baseURL: env.VERCEL_URL ?? env.BETTER_AUTH_URL,
+  baseURL: env.VERCEL_URL ? `https://${env.VERCEL_URL}` : env.BETTER_AUTH_URL,
 });
