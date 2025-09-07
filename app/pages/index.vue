@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import AuthButton from "~/components/auth-button.vue";
 </script>
 
 <template>
@@ -13,9 +13,7 @@
           Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
           quasi. In deleniti eaque aut repudiandae et a id nisi.
         </p>
-        <button class="btn btn-accent">
-          Sign In With Github <Icon name="tabler:brand-github" />
-        </button>
+        <AuthButton />
       </div>
     </div>
   </div>
