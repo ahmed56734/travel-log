@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AuthButton from "~/components/auth-button.vue";
+const authStore = useAuthStore();
 </script>
 
 <template>
@@ -13,7 +13,10 @@ import AuthButton from "~/components/auth-button.vue";
           Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
           quasi. In deleniti eaque aut repudiandae et a id nisi.
         </p>
-        <AuthButton />
+        <AuthButton v-if="!authStore.user" />
+        <NuxtLink v-else to="/dashboard" class="btn btn-primary">
+          Go to Dashboard
+        </NuxtLink>
       </div>
     </div>
   </div>
