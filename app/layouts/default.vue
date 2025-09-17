@@ -1,16 +1,12 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="flex min-h-screen flex-col">
     <AppNavBar />
-    <main>
+    <main class="flex flex-1 flex-col">
       <slot />
     </main>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
